@@ -49,6 +49,15 @@ class GameScene extends Phaser.Scene {
         }
       });
 
+      currentCircle.wrongTween = this.tweens.add({
+        targets: currentCircle,
+        paused: true,
+        scaleX: 1.5,
+        scaleY: 1.5,
+        yoyo: true,
+        duration: 150
+      });
+
       
       
     }
